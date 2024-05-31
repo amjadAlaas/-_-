@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        90deg,
+        #FFF2D7,
+        #FFE0B5,
+        #F8C794
+    );
+    position: relative;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.output {
+    font-size: 18px;
+    background-color: #f0bc81;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    width: 50%;
+    height: 25%;
+    color: #fff;
+    border-radius: 20px;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(5%);
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fbaa4e
+}
+.err-msg {
+    color: #fff;
+}
+.success-msg {
+    color: #fff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fbaa4e;
+    padding: 40px;
+    border-radius: 40px;
+    width: 75%;
+}
+form input[type='date'] {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: rgb(2, 0, 36);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-color: #fff;
+}
+form input[type='date']:focus {
+    outline: none;
+}
+form input[type='button'] {
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-color: #fff;
+    color: #FBAA4E;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+}
+form input[type='button']:hover {
+    background-color: #D8AE7E;
+    color: #fff;
+}
