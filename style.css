@@ -36,8 +36,8 @@
     padding: 20px 40px;
     width: 50%;
     height: 25%;
-    color: #fff;
     border-radius: 20px;
+    border: 1px solid #fff;
 }
 .close {
     position: absolute;
